@@ -1,0 +1,35 @@
+###
+GET http://localhost:3010/qtd
+
+###
+POST http://localhost:3010/cadAnimais
+Content-Type: application/json
+
+{
+    "nome": "toto",
+    "rg": "2222",
+    "tipo": "cão",
+    "porte": "Pequeno",
+    "raca": "vira-lata",
+    "idade": 2,
+    "sexo": "M"
+    
+}
+
+###
+POST http://localhost:3000/INSERT
+Content-Type: application/json
+
+{
+    "nome":"Mauricio",
+    "email":"mau@cps.com",
+    "telefone":"000000011",
+    "senha":"123456",
+    "cpf_cnpj":"1000000001",
+    "tipo_pessoa" : "F",
+    "data_nasc":"2001-10-05"
+
+}
+
+###
+DELETE http://localhost:3000/usuario/5
